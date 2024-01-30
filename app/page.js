@@ -1,95 +1,31 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+      <section className="container">
+        <div className="container__inner pt-lr pb-lr">
+          <h1 className="txt-center pb-md">Home page</h1>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget
+            mauris pharetra et ultrices. Est ultricies integer quis auctor elit
+            sed vulputate. Vitae suscipit tellus mauris a diam. Volutpat blandit
+            aliquam etiam erat velit scelerisque in dictum. Eu nisl nunc mi
+            ipsum faucibus vitae aliquet nec. Sed odio morbi quis commodo. Nulla
+            posuere sollicitudin aliquam ultrices sagittis orci a scelerisque
+            purus. Ipsum faucibus vitae aliquet nec ullamcorper sit amet. Quis
+            imperdiet massa tincidunt nunc pulvinar sapien et ligula
+            ullamcorper. Tellus mauris a diam maecenas sed enim ut sem viverra.
+            Tortor dignissim convallis aenean et tortor at risus viverra. Nulla
+            malesuada pellentesque elit eget. Eu turpis egestas pretium aenean
+            pharetra. In eu mi bibendum neque egestas. Lobortis feugiat vivamus
+            at augue eget arcu dictum varius. Justo laoreet sit amet cursus sit.
+            Enim nec dui nunc mattis enim ut tellus elementum sagittis.
           </p>
-        </a>
-      </div>
+        </div>
+      </section>
     </main>
-  )
+  );
 }

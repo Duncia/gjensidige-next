@@ -1,0 +1,15 @@
+@import "../../globals.scss";
+@import "../../page.module.scss";
+
+.header {
+  background-color: $color-blue-bg;
+  color: $color-bright-text;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  &__nav {
+    a {
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+  }
+}

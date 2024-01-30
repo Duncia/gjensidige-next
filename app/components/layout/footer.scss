@@ -1,0 +1,159 @@
+@import "../../globals.scss";
+@import "../../page.module.scss";
+
+.footer {
+  &__top {
+    background-color: $color-blue-bg;
+    color: $color-bright-text;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .top__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+      @include biggerLaptop {
+        grid-template-columns: 13rem max-content;
+      }
+      @include largerScreen {
+        grid-template-columns: 13rem max-content 1fr;
+        justify-content: space-between;
+      }
+      @include largeScreen {
+        grid-template-columns: 13rem max-content 24rem;
+        justify-content: space-between;
+      }
+      column-gap: 2rem;
+      .google-play-icon {
+        scale: 1.1;
+      }
+      .footer-company {
+        max-width: 13rem;
+        &__logo {
+          margin-bottom: 2rem;
+        }
+        &__description {
+          font-size: 0.875rem;
+          margin-bottom: 1rem;
+        }
+        &__download-title {
+          font-size: 1.125rem;
+          margin-bottom: 1rem;
+        }
+        &__links {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          img {
+            max-width: 6rem;
+          }
+        }
+      }
+      .footer-nav {
+        nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          row-gap: 2rem;
+          @include smallLaptop {
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+          column-gap: 1rem;
+          .nav-block {
+            h4 {
+              font-size: 1.125rem;
+              margin-bottom: 1.5rem;
+            }
+            ul {
+              max-width: 12rem;
+              li {
+                list-style: none;
+                padding-bottom: 1rem;
+                a {
+                  text-decoration: none;
+                  color: inherit;
+                  line-height: 1.5;
+                  font-weight: 300;
+                  font-size: 1rem;
+                  font-weight: 300;
+                }
+                a:hover {
+                  color: $color-grey;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer-newsletter {
+        grid-column: 1/-1;
+        max-width: 24rem;
+        @include largerScreen {
+          grid-column: auto;
+        }
+        h4 {
+          font-size: 1.125rem;
+          margin-bottom: 1.5rem;
+        }
+        .input-block {
+          display: flex;
+          align-items: top;
+          margin-bottom: 1rem;
+          .newsletter-input {
+            font-size: 1rem;
+            font-family: inherit;
+            color: $color-grey;
+            padding: 8px 16px;
+            background-color: $color-white-bg;
+            background: $color-white-bg;
+            border: 1px solid $color-white-bg;
+            width: 100%;
+            max-width: 15rem;
+            border-radius: 5px;
+            outline: none;
+            min-height: 40px;
+          }
+          .newsletter-btn {
+            outline: none;
+            text-decoration: none;
+            outline: none;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 8px 16px;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            color: $color-blue-text;
+            line-height: normal;
+            background-color: $color-yellow;
+            border-radius: 5px;
+            border-color: $color-yellow;
+            border-width: 1px;
+            border-style: solid;
+            min-height: 40px;
+            margin-left: 0.5rem;
+          }
+        }
+        .social-icons {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          row-gap: 2rem;
+          column-gap: 1rem;
+          .social-icon {
+            display: flex;
+            align-items: center;
+            img {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    font-family: "Gjensidige Brown OT Alternate";
+    background-color: $color-lightblue-bg;
+    color: $color-blue-text;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}

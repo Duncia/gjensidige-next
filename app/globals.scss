@@ -1,0 +1,129 @@
+/*Color variables*/
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-white-bg: #fffffa;
+$color-lightblue-bg: #eef0f3;
+$color-blue-bg: #233f53;
+
+$color-bright-text: #fffaeb;
+$color-blue-text: #233f54;
+
+$color-yellow: #f3ad00;
+$color-grey: #909baa;
+/*Mixins*/
+//Screen size 480px
+@mixin tablet {
+  @media only screen and (min-width: 30em) {
+    @content;
+  }
+}
+
+//Screen size 768px
+@mixin smallLaptop {
+  @media only screen and (min-width: 48em) {
+    @content;
+  }
+}
+//Screen size 900px
+@mixin biggerLaptop {
+  @media only screen and (min-width: 56.25em) {
+    @content;
+  }
+}
+
+//Screen size 1024px
+@mixin desktop {
+  @media only screen and (min-width: 64em) {
+    @content;
+  }
+}
+
+//Screen size 1200px
+@mixin largerScreen {
+  @media only screen and (min-width: 75em) {
+    @content;
+  }
+}
+//Screen size 1300px
+@mixin largeScreen {
+  @media only screen and (min-width: 81.25em) {
+    @content;
+  }
+}
+
+//Screen size 1640px
+@mixin veryBigScreen {
+  @media only screen and (min-width: 102.5em) {
+    @content;
+  }
+}
+
+/*Base reset of styles*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+a:visited,
+a:active {
+  color: inherit;
+}
+body {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+/*Typography*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+.paragraph-bold {
+  font-weight: 700;
+}
+/*Paddings*/
+.pt-sm {
+  padding-top: 2rem;
+}
+.pb-sm {
+  padding-bottom: 2rem;
+}
+.pt-md {
+  padding-top: 4rem;
+}
+.pb-md {
+  padding-bottom: 4rem;
+}
+.pt-lr {
+  padding-top: 6rem;
+}
+.pb-lr {
+  padding-bottom: 6rem;
+}
+/*Other*/
+.txt-center {
+  text-align: center;
+}
